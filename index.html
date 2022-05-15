@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial scale="1.0" >
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"> 
+        <title>Jacks Art Shop</title>
+    </head>
+
+<body>
+    <header id="header">
+            <a href="#" class="logo">Kennedy's</a>
+            <ul class ="nav-links">
+                <li><a href="#Home" onclick="toggle()" class="active">Home</a></li>
+                <li><a href="#About" onclick="toggle()">About</a></li>
+                <li><a href="#Skills" onclick="toggle()">Skills</a></li>
+                <li><a href="#Portfolio" onclick="toggle()">Portfolio</a></li>
+                <li><a href="#Contact" onclick="toggle()">Contact</a></li>
+            </ul>
+  <div class="toggle" onclick="toggle()" ></div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+         </header>
+        <section id="Home">
+        <div>
+            
+                <h2>
+                    Home
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="#" class="Read-more">Read More</a>
+                <img src="Sketch2.jpeg" width="1500px" height="300px" >
+                <div class="social">
+                    <a href="#"><i class="bx bxl-facebook"></i></a>
+                    <a href="#"><i class="bx bxl-twitter"></i></a>
+                    <a href="#"><i class="bx bxl-instagram" ></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="About">
+            <div class="about-content">
+                <h2>
+                    About
+                </h2>
+                <p class="bold">
+                    Wed Developer, Entreprenuer, Artist, Bachelor
+                </p>
+                    <a href="CV summer 2022.docx" class="btn" target="_blank" download>Downlaod CV<i class="bx bx-download" ></i></a>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <img src="image_6483441.JPG">
+                
+            </div>
+        </section>
+        <section id="Skills">
+            <div>
+                    <h2>
+                       Skills
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <img src="image_67208961.JPG">
+                </div>
+            </section>
+            <section id="Portfolio">
+                <div>
+                        <h2>
+                            Portfolio
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                         <img src="mirror-bar.jpeg">
+                    </div>
+                </section>
+                <section id="Contact">
+                    <div>
+                            <h2>
+                                Contact
+                            </h2>
+                    <form class="contact-form" id="contact-form">
+                        <input type="text" placeholder="Your name" class="name" required>
+                        <input type="email" name="" id="" placeholder="Email address" class="email" required>
+                        <textarea name="" id="" cols="100" rows="10" placeholder="Write message here" class="message" required></textarea> 
+                        <input type="submit" value="Send" class="send-btn"> 
+                    </form>
+                        </div>
+                    </section>
+                    <footer class="footer-container" id="footer">
+                    <div class="social">
+                        <a href="mailto:jackkennedy190@gmail.com"><i class='bx bx-envelope' ></i></a>
+                        <a href="#"><i class='bx bxl-facebook'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </footer>
+                    
+
+    <!-- emailjs --> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript"></script>
+        <!-- Sweet Alert Js-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript">
+        (function(){
+        emailjs.init("W1WHI8qLGS7XeZXRc");
+        })();
+    </script>
+
+        <script src="Website.js"></script>
+        <script type="text/javascript">
+                   function toggle(){
+                    var header = document.getElementById("header")
+                    header.classList.toggle('active')
+                   }
+                </script>
+
+              
+    </body>
+</html>
